@@ -6,10 +6,6 @@ const nextConfig = {
     forceSwcTransforms: false,
     esmExternals: false,
   },
-  compiler: {
-    // Disable SWC completely
-    swcLoader: false,
-  },
   // Force Babel usage
   webpack: (config, { dev, isServer }) => {
     // Replace SWC with Babel for all JS/TS files
